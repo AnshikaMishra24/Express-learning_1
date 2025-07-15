@@ -2,6 +2,7 @@
   "name": "express-learning",
   "version": "1.0.0",
   "main": "index.js",
+
   "dependencies": {
     "accepts": "^2.0.0",
     "body-parser": "^2.2.0",
@@ -42,6 +43,7 @@
     "merge-descriptors": "^2.0.0",
     "mime-db": "^1.54.0",
     "mime-types": "^3.0.1",
+    "mongoose": "^8.16.3",
     "ms": "^2.1.3",
     "negotiator": "^1.0.0",
     "nodemon": "^3.1.10",
@@ -72,7 +74,8 @@
     "wrappy": "^1.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",

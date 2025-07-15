@@ -4,7 +4,7 @@ const getBooksController = (req, res) => {
   res.send("Hello from get resquest");
 };
 
-exports.addBookController = (req, res) => {
+const addBookController = (req, res) => {
   console.log("hello from post req");
 
   res.send("Hello from post resquest");
@@ -12,4 +12,5 @@ exports.addBookController = (req, res) => {
 
 module.exports = {
   getBooksController,
+  addBookController,
 };

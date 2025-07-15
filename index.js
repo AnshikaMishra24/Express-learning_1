@@ -1,5 +1,10 @@
 const express = require("express");
+const connectDB = require("./db");
+
+
+
 const booksRouter = require("./routes/books");
+connectDB()
 
 const app = express();
 

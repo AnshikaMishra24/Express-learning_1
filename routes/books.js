@@ -15,4 +15,4 @@ router.post("/post", (req, res) => {
     res.send("Hello from post request");
 });
 
-module.export= router
+module.exports= router;
