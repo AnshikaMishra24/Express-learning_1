@@ -1,18 +1,12 @@
 const express = require("express");
+const {
+  getBooksController,
+  addBookController,
+} = require("../controller/books");
 const router = express.Router();
 
+router.get("/get", getBooksController);
 
-router.get('/get',(req,res) => {
-    console.loh("hello from get req");
+router.post("/add", addBookController);
 
-    res.send("Hello from get request")
-
-});
-
-router.post("/post", (req, res) => {
-    console.log("hello from post req");
-
-    res.send("Hello from post request");
-});
-
-module.exports= router;
+module.exports = router;

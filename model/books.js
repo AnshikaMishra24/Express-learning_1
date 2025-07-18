@@ -1,12 +1,17 @@
-const express = require("express");
-const {
-  getBooksController,
-  addBookController,
-} = require("../controller/books");
-const router = express.Router();
+const mongoose = require("mongoose");
 
-router.get("/get", getBooksController);
+const bookScehma = new mongoose.Schema({
+  title: {
+    type: String,
+    require: true,
+    min: 3,
+  },
+  author: {
+    type: String,
+    require: true,
+  },
+});
 
-router.post("/post", addBookController);
+const Books = mongoose.model("Books", bookScehma);
 
-module.exports = router;
+module.exports = Books;
